@@ -70,8 +70,7 @@ def load_assets():
 
 # --- 3. Recommendation Logic ---
 def get_recommendations_final(query, user_id=None, city=None, country=None, top_n=5):
-     """
-    
+    """
     This function assumes all the assets loaded from GCS bucket and returns a panadas dataframe
     including # top hotels specified by user. The default number is 5. User can be either logged-in
     or in guest mode. Function will use the hybrid model if user is logged in and will use the content-
@@ -86,13 +85,11 @@ def get_recommendations_final(query, user_id=None, city=None, country=None, top_
     
     Returns: 
         pandas.DataFrame: Dataframe of top hotels to be recommended
-    
     """
-    
     # --- Candidate Selection by Location Filtering ---
     # Start with all hotels that have a rating.
     candidate_df = hotel_df[hotel_df['reviews.rating'].notnull()].copy()
-
+    
     if city:
         candidate_df = candidate_df[candidate_df['city'].str.lower() == city.lower()]
     if country:
