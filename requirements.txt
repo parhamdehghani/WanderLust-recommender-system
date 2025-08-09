@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+sentence-transformers
+xgboost
+scikit-learn
+pandas
+gcsfs
+pyarrow
+joblib
+google-cloud-storage
+numpy
