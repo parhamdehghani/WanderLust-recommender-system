@@ -85,12 +85,12 @@ Deployed API (may take some time to load data for the first time as the service 
 
 **Example 1: Anonymous, Location-Specific Query**
 ```bash
-curl "https://recommender-service-86763462033.northamerica-northeast1.run.app/recommend?query=a modern hotel in Los Angeles&city=Los Angeles"
+curl "https://recommender-service-86763462033.northamerica-northeast1.run.app/recommend?query=a%20modern%20hotel%20in%20Los%20Angeles&city=Los%20Angeles"
 ```
 
 **Example 2: Personalized Query**
 ```bash
-curl "https://recommender-service-86763462033.northamerica-northeast1.run.app/recommend?query=a stylish place with a great view&user_id=50&city=Vancouver"
+curl "https://recommender-service-86763462033.northamerica-northeast1.run.app/recommend?query=a%20stylish%20place%20with%20a%20great%20view&user_id=50&city=Vancouver"
 ```
 
 ## Key Concepts Demonstrated
